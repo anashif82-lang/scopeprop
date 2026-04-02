@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <div style={{backgroundColor:'#0a1628', minHeight:'100vh', color:'white', fontFamily:'sans-serif'}}>
       <nav style={{display:'flex', justifyContent:'space-between', padding:'20px 40px', borderBottom:'1px solid rgba(255,255,255,0.1)'}}>
         <span style={{fontSize:'24px', fontWeight:'bold'}}>ScopeProp</span>
-        <button style={{backgroundColor:'white', color:'#0a1628', padding:'10px 20px', borderRadius:'8px', border:'none', cursor:'pointer', fontWeight:'bold'}}>Get Started</button>
+        <Link href="/create" style={{backgroundColor:'white', color:'#0a1628', padding:'10px 20px', borderRadius:'8px', border:'none', cursor:'pointer', fontWeight:'bold', textDecoration:'none', display:'inline-block'}}>Get Started</Link>
       </nav>
       <div style={{textAlign:'center', padding:'100px 20px'}}>
         <h1 style={{fontSize:'48px', fontWeight:'bold', marginBottom:'20px'}}>Write Winning Proposals in 3 Minutes</h1>
